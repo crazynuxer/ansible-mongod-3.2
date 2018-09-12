@@ -1,4 +1,4 @@
-# ansible-mongodb-3.0 #
+# ansible-mongodb-3.2 #
 
 Ensures MongoDB 3.2 is installed and configured.
 
