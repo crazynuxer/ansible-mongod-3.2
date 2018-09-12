@@ -1,4 +1,4 @@
 
 - hosts: all
   roles:
-    - role: ../../ansible-mongod-3.0
+    - role: ../../ansible-mongod-3.2

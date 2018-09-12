@@ -1,6 +1,6 @@
 # ansible-mongodb-3.0 #
 
-Ensures MongoDB 3.0 is installed and configured.
+Ensures MongoDB 3.2 is installed and configured.
 
 ## Requirements ##
 
@@ -16,7 +16,7 @@ These variables are not defined by default, but can be passed to the role to mod
 ### Defaults ##
 
     - name: mongodb_version
-      value: 3.0.12
+      value: 3.2.21
       desc: MongoDB version to install
 
     - name: mongodb_port
@@ -95,7 +95,7 @@ Install standalone MongoDB
 ```
 - hosts: all
   roles:
-    - shared/mongodb-3.0
+    - shared/mongodb-3.2
 ```
 
 Install standalone MongoDB specifying port, IP and with journal disabled
@@ -103,16 +103,16 @@ Install standalone MongoDB specifying port, IP and with journal disabled
 ```
 - hosts: all
   roles:
-    - role: shared/mongodb-3.0
+    - role: shared/mongodb-3.2
       mongodb_port: 38875
       mongodb_bind_ip: 127.0.0.1
       mongodb_journal_enabled: false
 ```
 
-Install MongoDB with specific version (3.0.4)
+Install MongoDB with specific version (3.2.x)
 
 ```
 - hosts: all
   roles:
-    - role: shared/mongodb-3.0
-      mongodb_version: 3.0.4
+    - role: shared/mongodb-3.2
+      mongodb_version: 3.2.21
